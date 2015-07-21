@@ -54,14 +54,14 @@ The variable postingInterval holds the delay between updates, in milliseconds.
 ```bash
 const unsigned long postingInterval = 300L * 1000L; 
 ```
-Remote page is the page where the sketch post the data. 
+Remote page is the page where the sketch post the data. The route at the server.js is /api/sensor.
 ```bash
 char pageName[] = "/api/sensor";
 ```
 
 The API key acts as a sort of password authenticating the client. Changes must be according the value define in the file server.js
 ```bash
-char apiKey[] = "32gss64XZab";
+char apiKey[] = "YouRKeyHere";
 ```
 
-Make this changes, compile and upload the software to the board. Open a serial console an see the debug values, Arduino's requests and server's responses.
+Make this changes, compile and upload the software to your board. Open a serial console an see the debug values, Arduino's requests and server's responses.
