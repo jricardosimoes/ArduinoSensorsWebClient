@@ -24,6 +24,10 @@ This is a analog sensor. Change the pin configuration if desired.
 int HSM20GPIN = A0;
 ```
 
+
+
+![Hookup](https://github.com/jricardosimoes/ArduinoSensorsWebClient/blob/master/BreadboardHookup.jpg)
+
 ### Ethernet
 The sketch was written for the official Ethernet board, with default library.
 Enter a MAC address and IP address for your controller or left untouched.
