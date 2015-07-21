@@ -1,7 +1,7 @@
 # ArduinoSensorsWebClient
 Client for https://github.com/jricardosimoes/SensorsServerAndFront
 
-##Libraries
+## Config
 
 ### BMP180
 Install the library for the breakout board from
@@ -63,4 +63,8 @@ char apiKey[] = "YouRKeyHere";
 ```
 
 Make this changes, compile and upload the software to your board. Open a serial console an see the debug values, Arduino's requests and server's responses.
+
+![Output](https://github.com/jricardosimoes/ArduinoSensorsWebClient/blob/master/SketchInit.PNG)
+
+
 
