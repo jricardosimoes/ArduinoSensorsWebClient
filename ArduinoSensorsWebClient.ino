@@ -105,6 +105,22 @@ void setup() {
 
   //Setup Dallas
   sensors.begin();
+  
+  H = getHumidity();
+  T = getTemperature();
+  P = getPressure();
+  sensors.requestTemperatures();
+  
+  Serial.println(" ");
+  Serial.println("T(DS18B20) \t H(HSM20) \t P(BMP180) \t T (BMP180)");
+  Serial.print(sensors.getTempCByIndex(0));
+  Serial.print("\t");
+  Serial.print(H);
+  Serial.print("\t");
+  Serial.print((int)P);
+  Serial.print("\t");
+  Serial.println((int)T);
+
 
 }
 
@@ -137,7 +153,7 @@ void httpRequest() {
   sensors.requestTemperatures();
   
   Serial.println(" ");
-  Serial.println("T1 \t H \t P \t T2");
+  Serial.println("T(DS18B20) \t H(HSM20) \t P(BMP180) \t T (BMP180)");
   Serial.print(sensors.getTempCByIndex(0));
   Serial.print("\t");
   Serial.print(H);
