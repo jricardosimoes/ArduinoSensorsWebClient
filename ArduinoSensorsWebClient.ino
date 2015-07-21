@@ -118,7 +118,7 @@ void loop() {
     Serial.write(c);
   }
 
-  // if ten seconds have passed since your last connection,
+  // if [postingInterval]  seconds have passed since your last connection,
   // then connect again and send data:
   if (millis() - lastConnectionTime > postingInterval) {
     httpRequest();
